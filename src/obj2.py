@@ -1,5 +1,6 @@
 # Describe the differences between in-place and out-of-place algorithms
 
+# in-place algorithm
 x = []
 n = [1, 2, 3]
 def tripple_in_place(nums):
