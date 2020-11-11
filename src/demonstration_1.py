@@ -38,3 +38,6 @@ def pivot_index(nums): # O(n), O(1)
     # return -1 to the caller
     return -1
 
+
+print(pivot_index([1,7,3,6,5,6]))
+print(pivot_index([1,2,3]))
