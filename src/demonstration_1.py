@@ -20,7 +20,21 @@ Output: -1
 Explanation:
 There is no index that satisfies the conditions in the problem statement.
 """
-def pivot_index(nums):
-    # Your code here
-    pass
+def pivot_index(nums): # O(n), O(1)
+    # Set a totals to the sum of all nums
+    totals = sum(nums)
+    # set up a left totals to zero
+    left_totals = 0
+    # iterate over nums extracting num and index
+    for index, num in enumerate(nums):
+        # check if our left totals are equal to        
+        # (totals = left totals - num)
+        if left_totals == (totals - left_totals - num):
+            # return index to caller
+            return index
+        # increment our left totals by num
+        left_totals += num
+
+    # return -1 to the caller
+    return -1
 

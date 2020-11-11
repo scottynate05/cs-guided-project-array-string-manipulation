@@ -17,7 +17,7 @@
 # out-of-place algorithm
 x = []
 n = [1, 2, 3]
-def tripple_out_place(nums):
+def tripple_out_place(nums): # O(n), O(n)
     new_nums = [None] * len(nums)
     for index in range(len(nums)):
         new_nums[index] = nums[index] * 3
